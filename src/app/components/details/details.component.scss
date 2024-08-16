@@ -1,0 +1,31 @@
+.wrapper {
+  .details {
+    .game-banner {
+      height: 442px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        filter: blur(5px);
+      }
+    }
+
+    .game-content {
+      text-align: center;
+      position: relative;
+      top: -200px;
+
+      .header {
+        color: #fff;
+        font-weight: 700;
+
+        h3 {
+          font-size: 70px;
+          line-height: 120%;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

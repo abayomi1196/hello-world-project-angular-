@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="details">
+    <div class="game-banner">
+      <img src="{{ game?.background_image }}" alt="background image" />
+    </div>
+
+    <div class="game-content">
+      <div class="header">
+        <h3>{{ game?.name }}</h3>
+        <h4>Release: {{ game?.released | date }}</h4>
+
+        <p>
+          <span *ngFor="let genre of game?.genres; let last = last">
+            {{ genre.name }}<span *ngIf="!last">,</span>
+          </span>
+        </p>
+      </div>
+
+      <!-- tabs -->
+    </div>
+  </div>
+</div>
